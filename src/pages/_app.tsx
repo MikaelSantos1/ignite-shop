@@ -1,6 +1,6 @@
-import { globalStyles } from "../src/styles/global"
-import logoImg from '../src/assets/logo.svg'
-import { Container, Header } from "../src/styles/pages/app";
+import { globalStyles } from "../styles/global"
+import logoImg from '../assets/logo.svg'
+import { Container, Header } from "../styles/pages/app";
 import  Image from 'next/future/image'
 globalStyles();
 export default function App({ Component, pageProps }) {
