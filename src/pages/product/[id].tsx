@@ -11,7 +11,7 @@ interface ProductProps{
         id:string;
         price:string;
         description:string;
-      }[]
+      }
 }
 
 export default function Product({product}:ProductProps) {
