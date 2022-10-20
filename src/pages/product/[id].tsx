@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import Stripe from "stripe";
 import { stripe } from "../../lib/stripe";
 import { ImageContainer, ProductContainer, ProductDetails } from "../../styles/pages/Product";
-
+import Image from 'next/image'
 interface ProductProps{
     product:{
         name:string;
@@ -27,7 +27,7 @@ export default function Product({product}:ProductProps) {
     return (
         <ProductContainer>
             <ImageContainer>
-
+            <Image src={product.imagesUrl} width={520} height={480} alt="" />
             </ImageContainer>
 
             <ProductDetails>
