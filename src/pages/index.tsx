@@ -6,6 +6,7 @@ import Link from "next/link"
 import { useKeenSlider} from 'keen-slider/react'
 import 'keen-slider/keen-slider.min.css'
 import { stripe } from "../lib/stripe"
+import Camisa from '../assets/1.png'
 import { GetServerSideProps, GetStaticProps } from "next"
 import Stripe from "stripe"
 
