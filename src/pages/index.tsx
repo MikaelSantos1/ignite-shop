@@ -9,7 +9,7 @@ import { stripe } from "../lib/stripe"
 import Camisa from '../assets/1.png'
 import { GetServerSideProps, GetStaticProps } from "next"
 import Stripe from "stripe"
-
+import Head from "next/head"
 interface HomeProps{
   products:{
     name:string;
@@ -29,6 +29,9 @@ export default function Home({products}:HomeProps) {
   console.log(products)
   return (
     <HomeContainer ref={sliderRef} className="keen-slider">
+      <Head>
+        <title>Ignite shop</title>
+      </Head>
      {products &&
       products.map((product)=>(
         <Link key={product.id}  href={`product/${product.id}`} prefetch={false}>
